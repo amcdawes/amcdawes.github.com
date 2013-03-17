@@ -7,25 +7,17 @@
 	 		<p>We will perform unbalanced quantum-state measurements using array-based detection techniques to measure the quantum state of light after storage and retrieval process. These experiments will take place in warm and cold atomic vapor systems.<p>
 	 		<div class="media">
 				<a class="pull-left" href="#">
-					<img class="media-object" data-src="holder.js/64x64">
+					<img class="media-object" src="img/QOphasespace.png" width="170 px">
 				</a>
 				<div class="media-body">
-					<h4 class="media-heading">Media heading</h4>
+					<h4 class="media-heading"><a href="html5/StoredLight.html">Stored light</a></h4>
  
 					<!-- Nested media object -->
 					<div class="media">
-					stuff
+					<p>is the name of a technique for freezing an optical pulse inside an atomic vapor and storing it for a few milliseconds. The pulse of light is released from the atomic medium by an independent control beam. We have recently been awarded funding to perform measurements of the quantum state of light after storage in an atomic medium.</p>
 					</div>
 				</div>
 			</div>
-	 			<div class="row">
-	 				<div class="span2">
-	 					<img src="img/QOphasespace.png" width="170 px" class="thumbnail">
-	 				</div>
-	 				<div class="span8">
-	 					<p><a href="html5/StoredLight.html">Stored light</a> is the name of a technique for freezing an optical pulse inside an atomic vapor and storing it for a few milliseconds. The pulse of light is released from the atomic medium by an independent control beam. We have recently been awarded funding to perform measurements of the quantum state of light after storage in an atomic medium.</p>
-	 				</div>
-	 			</div>	
 	 			<hr>         
 	 			<h2>Atom Trapping</h2>
 	 			<p>We operate a magneto-optical trap (MOT) that is capable of cooling and trapping Rubidium atoms.<p>
