@@ -7,7 +7,7 @@
 	 		<p>We will perform unbalanced quantum-state measurements using array-based detection techniques to measure the quantum state of light after storage and retrieval process. These experiments will take place in warm and cold atomic vapor systems.<p>
 	 		<div class="media">
 				<a class="pull-left" href="#">
-					<img class="media-object" src="img/QOphasespace.png" width="170 px">
+					<img class="media-object" src="img/QOphasespace.png" width="64 px">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading"><a href="html5/StoredLight.html">Stored light</a></h4>
