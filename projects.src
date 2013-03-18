@@ -35,18 +35,21 @@
 				</div>
 			</div>	
 			
-	 				<hr>
-	 				<h2>Coherent Blue Light</h2>
-	 				<p>By driving warm Rubidium vapor with 780 nm light and 776 nm light, we excite the atoms from the 5S<sub>1/2</sub> state to the 5D<sub>5/2</sub> state. From there they can decay via a cascade process and emit light at 420 nm. When the two pump fields copropagate, the 420 nm light is coherent and exits the Rubidium vapor as a collimated beam.</p>
-	 				<div class="row">
-	 					<div class="span2">
-	 						<a href="https://picasaweb.google.com/lh/photo/ksEAKIkLEMiTAjQpkgw0PdMTjNZETYmyPJy0liipFm0?feat=directlink"><img src="https://lh5.googleusercontent.com/-5_wP5W8-4EA/T7z3eHdIjxI/AAAAAAAAA7c/RkMVdcaLJiM/s144/IMG_3254.jpg" width="170 px" class="thumbnail"></a>
-	 					</div>
-	 					<div class="span8">
-	 						<h3>UV from IR</h3>
-	 						<p>This experiment is a great project for undergraduate optics students. The generation of UV light from two IR lasers illustrates many phenomena. Specifically, the atomic structure is evidenced by the three different wavelengths involved in the process. Furthermore, coherent emission is a result of a combination of four-wave mixing and lasing without inversion. These phenomena invoke quantum mechanics of the rubidium vapor and can be explored using equipment that is often available at the advanced lab level.</p>
-	 					</div>
-	 				</div>
+			<h2>Coherent Blue Light</h2>
+			<p>By driving warm Rubidium vapor with 780 nm light and 776 nm light, we excite the atoms from the 5S<sub>1/2</sub> state to the 5D<sub>5/2</sub> state. From there they can decay via a cascade process and emit light at 420 nm. When the two pump fields copropagate, the 420 nm light is coherent and exits the Rubidium vapor as a collimated beam.</p>
+
+			<div class="media">
+				<a class="pull-left" href="#">
+					<img class="media-object" src="https://lh5.googleusercontent.com/-5_wP5W8-4EA/T7z3eHdIjxI/AAAAAAAAA7c/RkMVdcaLJiM/s144/IMG_3254.jpg" width="170 px">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">UV from IR</h4>
+ 
+					<div class="media">
+					<p>This experiment is a great project for undergraduate optics students. The generation of UV light from two IR lasers illustrates many phenomena. Specifically, the atomic structure is evidenced by the three different wavelengths involved in the process. Furthermore, coherent emission is a result of a combination of four-wave mixing and lasing without inversion. These phenomena invoke quantum mechanics of the rubidium vapor and can be explored using equipment that is often available at the advanced lab level.</p>
+					</div>
+				</div>
+			</div>
 
 	 				<hr>         
 	 				<h2>All-Optical Switching</h2>
