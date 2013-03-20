@@ -2,7 +2,7 @@ from mako.template import Template
 import codecs
 
 titles = ['3D Printer','Metalshop']
-files = ['3dprint','metalshop']
+files = ['3dprinting','metalshop']
 
 navtemplate = Template(filename="subnavlist.html")
 
