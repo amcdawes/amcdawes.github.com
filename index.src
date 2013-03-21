@@ -1,22 +1,32 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div>
         <div class="row">
-          <div class="span9">
+          <div class="span7">
             <h1>Welcome</h1>
             <p class="lead">I am an Assistant Professor of Physics at Pacific University in Forest Grove Oregon. I believe active learning environments are fundamental to effective science education. I lead a group of undergraduate research students in several fields of physics: atom cooling and trapping, pattern-forming nonlinear optics, slow- and fast-light, and the application of optical systems to quantum and classical information science.
             </p>
             <p><a class="btn btn-primary btn-large" href="projects.html">More about my work &raquo;</a></p>
           </div>
-          <ul class="thumbnails">
-            <li class="span3">
-              <div class="thumbnail">
-                <img src="img/Headshot2012_cropped.jpg" alt="">
-                <div class="caption">
-                  <p><a href="bio.html" class="btn btn-primary">More about me &raquo;</a></p>
+          <div class="span3">
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img class="img-rounded" src="img/Headshot2012_cropped.jpg" alt="">
+                  <div class="caption">
+                    <p>
+                    <a href="http://www.twitter.com/drdawes"><i class="icon-twitter icon-large"></i></a>
+                    <a href="http://www.linkedin.com/in/amcdawes"><i class="icon-linkedin icon-large"></i></a>
+                    <a href="http://www.github.com/amcdawes"><i class="icon-github icon-large"></i></a>
+                    <a href="https://plus.google.com/116455686873237453326/"><i class="icon-google-plus icon-large"></i></a>
+                    </p>
+                    <p><a href="bio.html" class="btn btn-primary">More about me &raquo;</a></p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="span2">
+          </div>
         </div>
       </div>
 
