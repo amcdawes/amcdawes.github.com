@@ -1,0 +1,14 @@
+<header class="jumbotron subhead" id="overview">
+	<h1>Metalshop</h1>
+	<p class="lead">More info coming soon</p>
+</header>
+
+<div class="subnav">
+	<ul class="nav nav-pills">
+		<li><a href="#mill">Milling Machine</a></li>
+		<li><a href="#lathe">Lathe</a></li>
+		<li><a href="#handtools">Hand Tools</a></li>
+	</ul>
+</div>
+
+	

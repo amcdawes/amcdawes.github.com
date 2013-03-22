@@ -11,12 +11,8 @@
 	<meta name="description" content="Personal webpage">
 	<meta name="author" content="Andrew M.C. Dawes">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen" href="css/bootstrap.css">
 
 </head>
 <body>
@@ -30,18 +26,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">Andrew M.C. Dawes</a>
+          <a class="brand" href="../index.html">Andrew M.C. Dawes</a>
           <div class="nav-collapse">
             <ul class="nav">
-              ${navlist}
-<!--               
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="bio.html">Bio</a></li>
-              <li><a href="papers.html">Papers</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="useful.html">Useful Stuff</a></li> -->
+              <li ><a href="3dprinting.html">3D Printer</a></li>
+<li class="active"><a href="metalshop.html">Metalshop</a></li>
+
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -50,7 +40,21 @@
 
     <div class="container">
       
-      ${content}
+      <header class="jumbotron subhead" id="overview">
+	<h1>Metalshop</h1>
+	<p class="lead">More info coming soon</p>
+</header>
+
+<div class="subnav">
+	<ul class="nav nav-pills">
+		<li><a href="#mill">Milling Machine</a></li>
+		<li><a href="#lathe">Lathe</a></li>
+		<li><a href="#handtools">Hand Tools</a></li>
+	</ul>
+</div>
+
+	
+
       
       <footer>
       <p>&copy; Andrew M.C. Dawes 2013. Built with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> from Twitter. Hosted by <a href="http://www.github.com">github</a></p>
@@ -60,12 +64,6 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $("a").tooltip();
-  });
-</script>
 
 <script>
 	var _gaq=[['_setAccount','UA-831794-5'],['_trackPageview']];
