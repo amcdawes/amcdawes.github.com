@@ -1,27 +1,60 @@
-		<!-- Main hero unit for a primary marketing message or call to action -->
-		<h1>Publications</h1>
-		<p class="lead">View my profile on <a href="http://scholar.google.com/citations?hl=en&user=ufHSLboAAAAJ">Google Scholar</a> and <a href="http://www.researcherid.com/rid/A-2157-2011">Researcher ID</a>.</p>
+<h1>Publications</h1>
+<p class="lead">View my profile on <a href="http://scholar.google.com/citations?hl=en&user=ufHSLboAAAAJ">Google Scholar</a> and <a href="http://www.researcherid.com/rid/A-2157-2011">Researcher ID</a>.</p>
+
+<div class="row">
+	<div class="span6">
 		<h2>Papers</h2>
-		<ol class="pubs">
+		<ol class="pubs">	
 			<li>Marcus B. Kienlen, Noah T. Holte, Hunter A. Dassonville, Andrew M.C. Dawes, Kurt D. Iversen, Ryan M. McLaughlin, and Shannon K. Mayer, "Coherent blue light generation in rubidium vapor," to appear in <em>Am. J. Phy.</em> (2013).</li>
+
+			<li>A.M.C. Dawes, <b>Noah Holte</b>, and <b>Hunter Dassonville</b>, `Quantum state tomography of slow and stored light,' in Advances in Slow and Fast Light VI; S. Shahriar, F. A. Narducci; Eds., Proc. SPIE <strong>8636</strong>, 36 (2013); <a href="http://dx.doi.org/10.1117/12.2010474">doi:10.1117/12.2010474</a></li>
+
 			<li> Heejeong Jeong, A. M. C. Dawes and D. J. Gauthier, `<a href="http://www.phy.duke.edu/research/photon/qelectron/pubs/JModOpt58_865_2011.pdf">Carrier-Frequency Dependence of a Step-Modulated Pulse Propagating Through a Single Narrow-Resonance Absorber,</a>' <em>J. Mod. Opt.</em> <strong>58</strong>, 865 (2011).</li>
+
 			<li>A. M. C. Dawes, `Optical switching with cold atoms,' <em>Physics</em> <strong>2</strong>, 41 DOI <a href="http://physics.aps.org/articles/v2/41" title="Physics - Optical switching with cold atoms">10.1103/Physics.2.41</a> (2009)</li>
+
 			<li>A.M.C. Dawes, D.J. Gauthier, S. Schumacher, N.H. Kwong, R. Binder and A.L. Smirl, `Transverse optical patterns for ultra-low-light-level all-optical switching,' <em>Laser & Photonics Rev.</em> <strong>DOI</strong> <a href="http://doi.wiley.com/10.1002/lpor.200810067">10.1002/lpor.200810067</a> (2009). <a href="files/dawes_lpr_preprint.pdf">[preprint]</a></li>
+
 			<li>A.M.C. Dawes, `<a href="files/pssr.200950106.pdf">Towards a single-photon all-optical transistor</a>,' <em>Phys. Status Solidi RRL</em> <strong>3</strong>, A17 (2009).</li>
 
 			<li>A.M.C. Dawes, `Using transverse optical patterns for ultra-low-light all-optical switching,' Duke University Ph.D. Dissertation, unpublished (2008). <a href="files/Dawes_dissertation.pdf">[PDF 7.7 MB]</a></li>
+
+			<li>A.M.C. Dawes and D.J. Gauthier, `<a href="files/cqo9_paper.pdf">Using Transverse Patterns for All-Optical Switching</a>,' in Coherence and Quantum Optics IX; N.P. Bigelow, J.H. Eberly, C.R. Stroud; Eds., (2008).</li>
+
 			<li>J.A. Greenberg, M. Oria, A.M.C. Dawes, D.J. Gauthier, <a href="files/OptExpress15_17699_2007.pdf">Absorption-Induced Trapping in an Anisotropic Magneto-optical Trap</a>, <em>Opt. Express</em> <b>15</b>, 17699 (2007).</li>
+
 			<li>A.M.C. Dawes, L. Illing, J.A. Greenberg, and D.J. Gauthier, <a href="files/Switching_PRA_77_013833.pdf">All-optical switching with transverse optical patterns</a>, <em>Phys. Rev. A</em> <b>77</b>, 013833 (2007).</li>
+
 			<li>Z. Zhu, A.M.C. Dawes, D.J. Gauthier, L. Zhang, and A.E. Willner, <a href="files/JLT25_201_2007.pdf">Broadband SBS slow light in an optical fiber</a>, <em>J. Lightwave Tech.</em> <b>25</b>, 201 (2007).</li>
+
 			<li>H. Jeong, A.M.C. Dawes, and D.J. Gauthier, <a href="files/PRL96_143901.pdf">Direct observation of optical precursors in a region of anomalous dispersion</a>, <em>Phys. Rev. Lett.</em> <b>96</b>, 143901 (2006).</li>
+
 			<li>M.D. Stenner and M.A. Neifeld, Z. Zhu, A.M.C. Dawes, and D.J. Gauthier, Distortion management in slow-light pulse delay, <em>Opt. Express</em> <b>13</b>, 9995 (2005).</li>
+
 			<li>A.M.C. Dawes, L. Illing, S.M. Clark, and D.J. Gauthier, All-optical switching in rubidium vapor, <em>Science</em> <b>308</b>, 672 (2005) [<a href="http://www.sciencemag.org/cgi/content/short/308/5722/672">672</a>] .</li>
+
+			<li>A.M.C. Dawes, S.M. Clark, L. Illing, D.J. Gauthier, `<a href="files/SPIE5735_60_2005.pdf">Observation of ultra-low-light-level all-optical switching</a>,' in Advanced Optical and Quantum Memories and Computing II; H. J. Coufal, Z. U. Hasan, and A. E. Craig; Eds., Proc. SPIE <strong>5735</strong>, 60-68 (2005).</li>
+
 			<li>A.M. Dawes, M. Beck, and K. Banaszek, Mode optimization for quantum-state tomography with array detectors, <em>Phys. Rev. A</em> <b>67</b>, 032102 (2003).</li>
+
+			<li>A.M. Dawes and M. Beck. `Simultaneous quantum state measurements using array detection,' in Coherence and Quantum Optics VIII; N. P. Bigelow, J. H. Eberly, C. R. Stroud, and I. A. Walmsley; Eds., (Kluwer Academic/Plenum, New York, 2003) p. 301.</li>
+
 			<li>A.M. Dawes, M. Beck, Quantum state measurement with array detectors, <em>Phys. Rev. A</em> <b>63</b>, 040101(R) (2001).</li>
 		</ol>
+<!-- 		<h2>Proceedings</h2>
+		<ol class="pubs">
+			<li>A.M.C. Dawes, <b>Noah Holte</b>, and <b>Hunter Dassonville</b>, `Quantum state tomography of slow and stored light,' in Advances in Slow and Fast Light VI; S. Shahriar, F. A. Narducci; Eds., Proc. SPIE <strong>8636</strong>, 36 (2013); <a href="http://dx.doi.org/10.1117/12.2010474">doi:10.1117/12.2010474</a></li>
+			<li>A.M.C. Dawes and D.J. Gauthier, `<a href="files/cqo9_paper.pdf">Using Transverse Patterns for All-Optical Switching</a>,' in Coherence and Quantum Optics IX; N.P. Bigelow, J.H. Eberly, C.R. Stroud; Eds., (2008).</li>
+			<li>A.M.C. Dawes, S.M. Clark, L. Illing, D.J. Gauthier, `<a href="files/SPIE5735_60_2005.pdf">Observation of ultra-low-light-level all-optical switching</a>,' in Advanced Optical and Quantum Memories and Computing II; H. J. Coufal, Z. U. Hasan, and A. E. Craig; Eds., Proc. SPIE <strong>5735</strong>, 60-68 (2005).</li>
+			<li>A.M. Dawes and M. Beck. `Simultaneous quantum state measurements using array detection,' in Coherence and Quantum Optics VIII; N. P. Bigelow, J. H. Eberly, C. R. Stroud, and I. A. Walmsley; Eds., (Kluwer Academic/Plenum, New York, 2003) p. 301.</li>
+		</ol> -->
+
+	</div>
+	<div class="span6">
 		<h2>Presentations</h2>
 		&dagger; indicates invited presentation, <b>bold</b> indicates student presentors.
 		<ol class="pubs">
+			<li class="invited">Andrew Dawes, <b>Noah Holte</b>, <b>Hunter Dassonville</b>, `<a href="http://www.slideshare.net/amcdawes/reed-seminar-2013">Quantum state tomography of slow and stored light</a>,' Reed College, Portland, OR, February 27, 2013.</li>
 			<li class="invited">Andrew Dawes, <b>Noah Holte</b>, <b>Hunter Dassonville</b>, `Quantum state tomography of slow and stored light,' Photonics West 2013, San Francisco, CA, February 3-5, 2013.</li>
 			<li><b>Marcus Kienlen, Noah Holte</b>, Andrew Dawes, 11th annual M. J. Murdock Charitable Trust College Science Research Conference, Seattle University, Seattle WA, November 11-12, 2011 (poster).</li>
 			<li><b>Marcus Kienlen, Noah Holte</b>, Andrew Dawes, Pacific  University Undergraduate Research Conference, Pacific University, Forest Grove OR, November ??-??, 2011 (poster).</li>
@@ -41,11 +74,5 @@
 			<li>A.M. Dawes and M. Beck, `Simultaneous quantum state measurement using array detection,' Northwest Section APS Meeting, Seattle, WA, May 25-26, 2001.</li>
 			<li>A.M. Dawes and M. Beck, `Simultaneous quantum state measurement using array detection,' (poster) 9th Regional Conference on  Undergraduate Research, Murdock College Science Research Program, University of Puget Sound, Tacoma, WA 2000.</li>
 		</ol>
-
-		<h2>Proceedings</h2>
-		<ol class="pubs">
-			<li>A.M.C. Dawes, <b>Noah Holte</b>, and <b>Hunter Dassonville</b>, `Quantum state tomography of slow and stored light,' in Advances in Slow and Fast Light VI; S. Shahriar, F. A. Narducci; Eds., Proc. SPIE <strong>8636</strong>, 36 (2013).</li>
-			<li>A.M.C. Dawes and D.J. Gauthier, `<a href="files/cqo9_paper.pdf">Using Transverse Patterns for All-Optical Switching</a>,' in Coherence and Quantum Optics IX; N.P. Bigelow, J.H. Eberly, C.R. Stroud; Eds., (2008).</li>
-			<li>A.M.C. Dawes, S.M. Clark, L. Illing, D.J. Gauthier, `<a href="files/SPIE5735_60_2005.pdf">Observation of ultra-low-light-level all-optical switching</a>,' in Advanced Optical and Quantum Memories and Computing II; H. J. Coufal, Z. U. Hasan, and A. E. Craig; Eds., Proc. SPIE <strong>5735</strong>, 60-68 (2005).</li>
-			<li>A.M. Dawes and M. Beck. `Simultaneous quantum state measurements using array detection,' in Coherence and Quantum Optics VIII; N. P. Bigelow, J. H. Eberly, C. R. Stroud, and I. A. Walmsley; Eds., (Kluwer Academic/Plenum, New York, 2003) p. 301.</li>
-		</ol>
+	</div>
+</div>
