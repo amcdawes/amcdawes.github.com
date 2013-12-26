@@ -1,57 +1,9 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title></title>
-	<meta name="description" content="Personal webpage">
-	<meta name="author" content="Andrew M.C. Dawes">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-
-
-</head>
-<body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">Andrew M.C. Dawes</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li ><a href="index.html">Home</a></li>
-<li class="active"><a href="projects.html">Projects</a></li>
-<li ><a href="papers.html">Papers</a></li>
-<li ><a href="bio.html">Bio</a></li>
-<li ><a href="contact.html">Contact</a></li>
-<li ><a href="schedule.html">Schedule</a></li>
-<li ><a href="useful.html">Useful Stuff</a></li>
-
-              <li><a href="http://dawes.wordpress.com">Blog</a></li>
-              <li><a href="http://github.com/daweslab">Code</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      
-      
+---
+title: Projects
+categories: main
+group: "navigation"
+---
+{{include header.html}}
 <div class="row">
 	<div class="span6">
 		<ul class="thumbnails">
@@ -80,7 +32,7 @@
 
 
  	<div class="span6">
- 		<h2>Quantum State Measurement of Stored Light</h2> 
+ 		<h2>Quantum State Measurement of Stored Light</h2>
  		<p>We will perform unbalanced quantum-state measurements using array-based detection techniques to measure the quantum state of light after storage and retrieval process. These experiments will take place in warm and cold atomic vapor systems.<p>
  		<div class="media">
 			<a class="pull-left" href="#">
@@ -94,8 +46,8 @@
 		</div>
 	</div>
 </div>
-<div class="row">	
- 	<div class="span6">		        
+<div class="row">
+ 	<div class="span6">
 			<h2>Atom Trapping</h2>
 			<p>We operate a magneto-optical trap (MOT) that is capable of cooling and trapping Rubidium atoms.<p>
 		<div class="media">
@@ -109,10 +61,10 @@
 				<h3>anisotropic MOT</h3>
 				<p>We create an anisotropic atom cloud; one that is much longer than it is wide. We then study the interactions between laser light and this long, narrow cloud of atoms.</p>
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 
-	<div class="span6">		
+	<div class="span6">
 		<h2>Coherent Blue Light</h2>
 		<p>By driving warm Rubidium vapor with 780 nm light and 776 nm light, we excite the atoms from the 5S<sub>1/2</sub> state to the 5D<sub>5/2</sub> state. From there they can decay via a cascade process and emit light at 420 nm. When the two pump fields copropagate, the 420 nm light is coherent and exits the Rubidium vapor as a collimated beam.</p>
 
@@ -144,7 +96,7 @@
 		</div>
 	</div>
 
-	<div class="span6">	
+	<div class="span6">
 		<h2>Information display</h2>
 		<p>I am interested in improving the display and dissemination of scientific information. This curiousity has also extended into an interest in interactive displays. I use Arduino hardware, and <a href="http://processing.org">Processing</a> to create displays that respond to their environment.</p>
 		<div class="media">
@@ -159,10 +111,10 @@
 		</div>
 	</div>
 </div>
-<div class="row">	
+<div class="row">
 	<div class="span6">
 		<h2><a href="making/3dprinting.html">3D Printing</a></h2>
-		<p>The rise of 3D printing over the past three years has been exciting to watch. The physics department purchased a MakerBot Thing-O-Matic in Dec. 2011. The physics club assembled the printer, and manages its use. 
+		<p>The rise of 3D printing over the past three years has been exciting to watch. The physics department purchased a MakerBot Thing-O-Matic in Dec. 2011. The physics club assembled the printer, and manages its use.
 		<div class="media">
 			<a class="pull-left" href="#">
 				<img class="media-object" src="img/makerbot_large.jpg" width="170 px">
@@ -207,28 +159,5 @@
     <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
   </div>
 </div>
-      
-      <footer>
-      <p>&copy; Andrew M.C. Dawes 2013. Built with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> from Twitter. Hosted by <a href="http://www.github.com">github</a></p>
-      </footer>
 
-    </div> <!-- /container -->
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $("a").tooltip();
-  });
-</script>
-
-<script>
-	var _gaq=[['_setAccount','UA-831794-5'],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-
-</body>
-</html>
+{{include footer.html}}
