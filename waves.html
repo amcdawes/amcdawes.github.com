@@ -52,10 +52,14 @@
         var newXshift2 = document.getElementById("xs").value;
         var newPhase2 = document.getElementById("ps").value;
 
-        var waveProps = {a: newAmp, k: newk};
+        //TODO this will need to load defaults from the current model to fill in the form values
+        //NOTE: you need to enter a value for each parameter!
+        //TODO add sensible defaults for empty form values
+        var newwave1 = {a: newAmp, k: newk, w: neww, xs: newXshift, ps: newPhase};
+        var newwave2 = {a: newAmp, k: newk, w: neww, xs: newXshift, ps: newPhase};
 
        d3.select('#chart1').select('svg')
-            .datum(twoWavesSum(waveProps))
+       .datum(twoWavesSum(newwave1,newwave2))
             .call(chart);
 
 
@@ -87,9 +91,10 @@
             .axisLabel('y(x,t)')
             .tickFormat(d3.format(',.2f'))
         ;
-
+        var wave1 = {a:0.5,k:0.2,w:0,xs:0,ps:0};
+        var wave2 = {a:0.5,k:0.2,w:0,xs:0,ps:3.14};
         d3.select('#chart1').append('svg')
-        .datum(twoWavesSum({a:0.5,k:0.2}))
+        .datum(twoWavesSum(wave1,wave2))
             .call(chart);
 
         nv.utils.windowResize(chart.update);
@@ -98,10 +103,10 @@
     });
 
     function wave(x,t,waveProps) {
-        return amp * Math.sin( k*(x+pos) + w*t + phase);
+        return waveProps.a * Math.sin( waveProps.k*(x+waveProps.xs) + waveProps.w*t + waveProps.ps);
     }
 
-    function twoWavesSum(waveProps) {
+    function twoWavesSum(wave1,wave2) {
         var wavef = [],
             waveg = [],
             sum = []
@@ -109,8 +114,8 @@
 
         for (var i = 0; i < 100; i++) {
             //sin.push({x: i, y: 0.5 * Math.sin(i/10) });
-            wavef.push({x: i, y: wave(i,0,waveProps.a,0.2,1,0,0) });
-            waveg.push({x: i, y: wave(i,0,waveProps.a,0.2,1,0,3.14) });
+            wavef.push({x: i, y: wave(i,0,wave1) });
+            waveg.push({x: i, y: wave(i,0,wave2) });
             sum.push({x: i, y: 0.5 * (Math.cos(i/10) + Math.sin(i/10)) });
         }
 
