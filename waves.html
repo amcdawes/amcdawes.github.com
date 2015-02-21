@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="nvd3/build/nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="nv.d3.css" rel="stylesheet" type="text/css">
     <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
-    <script src="nvd3/build/nv.d3.js"></script>
+    <script src="nv.d3.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
     <style>
@@ -45,7 +45,7 @@
         var newXshift = document.getElementById("xs").value;
         var newPhase = document.getElementById("ps").value;
         
-        // This will need to be refactored:
+        // These will need to be refactored:
         var newAmp2 = document.getElementById("A").value;
         var newk2 = document.getElementById("k").value;
         var neww2 = document.getElementById("w").value;
@@ -92,7 +92,7 @@
             .tickFormat(d3.format(',.2f'))
         ;
         var wave1 = {a:0.5,k:0.2,w:0,xs:0,ps:0};
-        var wave2 = {a:0.5,k:0.2,w:0,xs:0,ps:3.14};
+        var wave2 = {a:0.5,k:0.2,w:0,xs:0,ps:1.0};
         d3.select('#chart1').append('svg')
         .datum(twoWavesSum(wave1,wave2))
             .call(chart);
@@ -116,7 +116,7 @@
             //sin.push({x: i, y: 0.5 * Math.sin(i/10) });
             wavef.push({x: i, y: wave(i,0,wave1) });
             waveg.push({x: i, y: wave(i,0,wave2) });
-            sum.push({x: i, y: 0.5 * (Math.cos(i/10) + Math.sin(i/10)) });
+            sum.push({x: i, y: (wave(i,0,wave1) + wave(i,0,wave2) )});
         }
 
         return [
