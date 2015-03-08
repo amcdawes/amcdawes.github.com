@@ -15,10 +15,11 @@
             display: block;
         }
         html, body, #chart1, svg {
-            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
             padding: 5px;
             height: 95%;
-            width: 95%;
+            width: 90%;
         }
     </style>
 </head>
@@ -26,14 +27,21 @@
 
 <div id="chart1"></div>
 <div>
-    <form>
+    <form id="input">
         Amplitude: <input class="fields" id="A" type="float"/>
         k: <input class="fields" id="k" type="float"/>
         w: <input class="fields" id="w" type="float"/>
         x-shift: <input class="fields" id="xs" type="float"/>
         phase-shift: <input class="fields" id="ps" type="float"/>
+        <br /> 
+        Amplitude2: <input class="fields" id="A2" type="float"/>
+        k2: <input class="fields" id="k2" type="float"/>
+        w2: <input class="fields" id="w2" type="float"/>
+        x-shift2: <input class="fields" id="xs2" type="float"/>
+        phase-shift2: <input class="fields" id="ps2" type="float"/>
         <input type="submit" />
     </form>
+
 </div>
 
 
@@ -46,17 +54,17 @@
         var newPhase = document.getElementById("ps").value;
         
         // These will need to be refactored:
-        var newAmp2 = document.getElementById("A").value;
-        var newk2 = document.getElementById("k").value;
-        var neww2 = document.getElementById("w").value;
-        var newXshift2 = document.getElementById("xs").value;
-        var newPhase2 = document.getElementById("ps").value;
+        var newAmp2 = document.getElementById("A2").value;
+        var newk2 = document.getElementById("k2").value;
+        var neww2 = document.getElementById("w2").value;
+        var newXshift2 = document.getElementById("xs2").value;
+        var newPhase2 = document.getElementById("ps2").value;
 
         //TODO this will need to load defaults from the current model to fill in the form values
         //NOTE: you need to enter a value for each parameter!
         //TODO add sensible defaults for empty form values
         var newwave1 = {a: newAmp, k: newk, w: neww, xs: newXshift, ps: newPhase};
-        var newwave2 = {a: newAmp, k: newk, w: neww, xs: newXshift, ps: newPhase};
+        var newwave2 = {a: newAmp2, k: newk2, w: neww2, xs: newXshift2, ps: newPhase2};
 
        d3.select('#chart1').select('svg')
        .datum(twoWavesSum(newwave1,newwave2))
