@@ -24,7 +24,7 @@
 
     // Will also work for relative and absolute hrefs
     $('#navlist a').filter(function() {
-        return this.href == url;
+        return window.location.pathname == url;
     }).addClass('better-active');
   </script>
     <div class="container">
