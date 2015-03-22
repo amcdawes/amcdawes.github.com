@@ -17,17 +17,15 @@
   </head>
   <body>
   <script>
-    $(document).ready(function() {
-        var pathname = window.location.pathname;
+    var url = window.location.href;
 
-        $("#navlist a").each(function(index) {
-            if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1)
-                $(this).addClass("current");
-        });
+    // Will only work if string in href matches with location
+    $('#navlist a[href="'+ url +'"]').addClass('active');
 
-        if ($("a.current").length == 0)
-            $("a#index").addClass("current");
-    });
+    // Will also work for relative and absolute hrefs
+    $('.menu a').filter(function() {
+        return this.href == url;
+    }).addClass('better-active');
   </script>
     <div class="container">
       <!-- Static navbar -->
