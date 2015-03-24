@@ -1,0 +1,112 @@
+---
+title: Making
+categories: making
+group: "navigation"
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andrew M.C. Dawes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+body { padding-top: 70px; }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">Andrew M.C. Dawes</a>
+        </div>
+        {% assign current = page.url | downcase | split: '/' %}
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li {% if current[1] == 'index.html' %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+            <li {% if current[1] == '3dprinting.html' %}class="active"{% endif %}><a href="3dprinting.html">3D Printing</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav> 
+
+<!-- Begin page-specific -->
+      
+      <header class="jumbotron subhead" id="overview">
+        <h1>Making</h1>
+        <p class="lead"></p>
+        <p>People empowered to change their immediate surroundings can change the world. Making is about more than building, or tinkering, or assembling. It is about improving your surroundings through investigation, creativity, and hard work. There are no prerequisites, no foundational knowledge required, simply a desire to learn and a willingness to work.</p>
+      </header>
+
+      <section id="arduino">
+        <h2>Arduino</h2>
+        <p>The <a href="http://arduino.cc">arduino</a> project is a shining example of success in open source hardware and the maker community. Originally designed to enable artists to leverage the power of programmable microcontrollers, the arduino board has become a symbol of electronics making and has rekindled the home hobby electronics scene.<p>
+        <div class="media">
+          <a class="pull-left" href="http://arduino.cc/en/Main/ArduinoBoardUno"><img src="http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front.jpg" width="170 px" class="media-object"></a>
+          <div class="media-body">
+              <h3 class="media-heading">Arduino UNO</h3>
+            <p>The current standard board from Arduino. Useful for most projects, and a great gateway to the world of Ardunio. Most of our projects start on this board and then either port up to a Mega or down to a Nano/Micro or some other compatible variant.</p>
+          </div>
+        </div>
+
+        <div class="media">
+          <a class="pull-left" href=""><img class="media-object" src="" width="170 px"></a>
+          <div class="media-body">
+            <h3 class="media-heading">Temperature and Relative Humidity monitor</h3>
+            <p>Using an ethernet shield and the <a href="http://plot.ly">Plotly</a> streaming API, we can monitor the temperature and humidity of our research lab.</p>
+          </div>
+        </div>
+
+        <div class="media">
+          <a class="pull-left" href=""><img src="" width="170 px" class="media-object"></a>
+          <div class="media-body">
+            <h3 class="media-heading">Servo shutter</h3>
+            <p>A computer-controlled beam blocking shutter used to turn our signal beam on and off between calibration sets. An additional feature of this project is the ability to power down the servo remotely to eliminate any mechanical vibrations during our sensitive optical data collection phase.</p>
+          </div>
+        </div>
+
+        <div class="media">
+          <a class="pull-left" href=""><img src="" width="170 px" class="media-object"></a>
+          <div class="media-body">
+            <h3 class="media-heading">LCD menu driver for RF signal generator</h3>
+            <p>We use an Arduino to display the status and settings for a home-build RF signal generator. This box creates the 1 Watt signal used to power up to three acousto-optic modulators (AOM). These AOMs are phase locked to provide up to three coherent fields that can be independently pulsed on and off as part of our stored light experiments.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <p>&copy; Andrew M.C. Dawes 2015. Built with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> from Twitter. Hosted by <a href="http://www.github.com">github</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script>
+      var _gaq=[['_setAccount','UA-831794-5'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
+</html>
