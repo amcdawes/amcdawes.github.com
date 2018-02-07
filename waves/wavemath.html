@@ -1,0 +1,65 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="row">
+	<div class="span5">
+      <h4><a href="#">Lesson 1</a></h4>
+      <p>Overview of the course, prerequisites, instructor contact information, syllabus, location information</p>
+	</div>
+  <div id="calculator" style="width: 600px; height: 400px;">
+    <script>
+    var elt = document.getElementById('calculator');
+    var calculator = Desmos.GraphingCalculator(elt);
+    calculator.setExpression({id:'graph1', latex:'y=x^2'});
+    </script>
+  </div>
+
+  	<div class="span3">
+      Progress: <span class="pull-right strong">36%</span>
+      <div class="progress">
+	            <div class="bar" style="width: 36%;"></div>
+	  </div>
+  	</div>
+</div>
+<hr>
+
+<div class="row">
+	<div class="span5">
+      <h4><a href="#">Lesson 2</a></h4>
+      <p>Details about world history, geography of the ancient world, literature and resources</p>
+	</div>
+  	<div class="span3">
+      Progress: <span class="pull-right strong">10%</span>
+      <div class="progress">
+	            <div class="bar" style="width: 10%;"></div>
+	  </div>
+  	</div>
+</div>
+<hr>
+
+<div class="row">
+	<div class="span5">
+      <h4><a href="#">Lesson 3</a></h4>
+      <p>Pop quiz on the material learned so far, reading of Socrates and watching a movie "Ancient Greece".</p>
+	</div>
+  	<div class="span3">
+      Progress: <span class="pull-right strong">0%</span>
+      <div class="progress">
+	            <div class="bar" style="width: 0%;"></div>
+	  </div>
+  	</div>
+</div>
+<hr>
+  <iframe src="https://www.desmos.com/calculator/twoz7p81wt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+  <iframe src="https://www.desmos.com/calculator/ec6tdhz0wm?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+  <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
