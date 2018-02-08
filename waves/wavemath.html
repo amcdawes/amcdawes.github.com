@@ -1,65 +1,153 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <h4><a href="#">Exploring the sin function description of waves</a></h4>
+        <p>Exercise 1:</p>
+        <ol>
+          <li>Check that f(x,t)= 2.5*sin(0.75*x-0.5*t) in the first row.</li>
+          <li>Check that g(x,t)=0 in the second row.</li>
+          <li>Hide all but the f(x,t) function by clicking the colored icon to the left of the other functions.</li>
+          <li>In the equation for f(x,t) above, what are the numerical values of k, &lambda;, &omega;, f, and Amplitude?</li>
+          <li>Check your answer for &lambda; by measuring the wavelength as follows: find the x- position of one of the wavecrests by placing the cursor on the peak and holding down the mouse. In the same way, find the x-position of another wavecrest. Use these two numbers to find the wavelength. Compare this measurement to the value of &lambda; from the equation.</l>
+          <li>Click on the play button next to the t=0 equation and watch the motion of f(x,t).</li>
+          <li>Change the sign in the argument, i.e. change sin(k*x-w*t) to sin(k*x+w*t), by changing the sign in the equation.
+          <li>If the simulation isn't running, click the play button again.</li>
+          <li>Describe what happens.</li>
+        </ol>
 
-<div class="row">
-	<div class="span5">
-      <h4><a href="#">Lesson 1</a></h4>
-      <p>Overview of the course, prerequisites, instructor contact information, syllabus, location information</p>
-	</div>
-  <div id="calculator" style="width: 600px; height: 400px;">
-    <script>
-    var elt = document.getElementById('calculator');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setExpression({id:'graph1', latex:'y=x^2'});
-    </script>
+      </div>
+    </div>
+    <div class="row">
+      <div id="waves" style="width: 1300px; height: 500px;"></div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="span5">
+        <p>Exercise 2:</p>
+        <ol>
+          <li>Stop the animation and set t=0 with the slider</li>
+          <li>Set f(x,t) = 2.5*sin(0.75*x-0.5*t+1)</li>
+          <li>Set g(x,t) = 2.5*sin(0.75*x-0.5*t)</li>
+          <li>How do the graphs of f(x,t) and g(x,t) compare?</li>
+          <li>Describe the behavior as you change the 1 to 2, 3, 4.</li>
+          <li>Can you find a value other than 0 that makes f(x,t) line up with g(x,t)? Hint: Think of the easier function sin(x). How much do you need to change x by for sin(x) to repeat?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span5">
+        <p>Exercise 3:</p>
+        <ol>
+          <li>Set g(x,t)=2.5*sin(0.75*x-0.5*t)
+          <li>Set f(x,t)=2.5*sin(0.75*(x+shift)-0.5*t), where shift is some number. Start with shift=1.</li>
+          <li>Describe the behavior as you change shift to 2, 3, 4.</li>
+          <li>What value(s) other than 0 make f(x,t) line up with g(x,t)? What do you notice special about them?</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+      <div class="span5">
+        <h4><a href="#">Pulses</a></h4>
+        <p>Info about this activity</p>
+      </div>
+      <div class="span3">
+        <p> More info</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div id="pulses" style="width: 1300px; height: 500px;"></div>
+    </div>
+    <div class="row">
+      <div class="span5">
+        <h4><a href="#">Lesson 3</a></h4>
+        <p>Pop quiz on the material learned so far, reading of Socrates and watching a movie "Ancient Greece".</p>
+      </div>
+      <div class="span3">
+        Progress: <span class="pull-right strong">0%</span>
+        <div class="progress">
+          <div class="bar" style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr>
+  <!-- <iframe src="https://www.desmos.com/calculator/twoz7p81wt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe> -->
+  <!-- <iframe src="https://www.desmos.com/calculator/ec6tdhz0wm?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe> -->
 
-  	<div class="span3">
-      Progress: <span class="pull-right strong">36%</span>
-      <div class="progress">
-	            <div class="bar" style="width: 36%;"></div>
-	  </div>
-  	</div>
-</div>
-<hr>
-
-<div class="row">
-	<div class="span5">
-      <h4><a href="#">Lesson 2</a></h4>
-      <p>Details about world history, geography of the ancient world, literature and resources</p>
-	</div>
-  	<div class="span3">
-      Progress: <span class="pull-right strong">10%</span>
-      <div class="progress">
-	            <div class="bar" style="width: 10%;"></div>
-	  </div>
-  	</div>
-</div>
-<hr>
-
-<div class="row">
-	<div class="span5">
-      <h4><a href="#">Lesson 3</a></h4>
-      <p>Pop quiz on the material learned so far, reading of Socrates and watching a movie "Ancient Greece".</p>
-	</div>
-  	<div class="span3">
-      Progress: <span class="pull-right strong">0%</span>
-      <div class="progress">
-	            <div class="bar" style="width: 0%;"></div>
-	  </div>
-  	</div>
-</div>
-<hr>
-  <iframe src="https://www.desmos.com/calculator/twoz7p81wt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
-  <iframe src="https://www.desmos.com/calculator/ec6tdhz0wm?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
 
   <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
+  <script>
+    var elt = document.getElementById('waves');
+    var calculator = Desmos.GraphingCalculator(elt);
+    calculator.setExpressions([{
+        id: 'graph1',
+        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
+      },
+      {
+        id: 'graph2',
+        latex: 'g\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
+      },
+      {
+        id: 'graph3',
+        latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+      },
+      {
+        id: 'slider1',
+        latex: 't=0',
+        sliderBounds: {
+          min: 0,
+          max: 10,
+          step: 0.1
+        }
+      }
+    ]);
+  </script>
+
+  <script>
+    var elt = document.getElementById('pulses');
+    var calculator = Desmos.GraphingCalculator(elt);
+    calculator.setExpressions([{
+        id: 'graph1',
+        latex: 'f\\left(x\\right)=a\\left(x\\right)+b\\left(x\\right)'
+      },
+      {
+        id: 'graph2',
+        latex: 'a\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
+      },
+      {
+        id: 'graph3',
+        latex: 'b\\left(x\\right)=-2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
+      },
+      {
+        id: 'slider1',
+        latex: 't=-10',
+        sliderBounds: {
+          min: -10,
+          max: 10,
+          step: 0.1
+        }
+      }
+    ]);
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
