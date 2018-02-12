@@ -28,6 +28,7 @@
       </div>
     </div>
     <div class="row">
+      <div class="display-5">Graph 1</div>
       <div id="waves" style="width: 1300px; height: 500px;"></div>
     </div>
 
@@ -114,7 +115,7 @@
         <p><b>Question 1:</b> Measure the total amplitude of the resultant wave at this moment in time. How does this compare to your prediction?</p>
         <p><b>Question 2:</b> Test your prediction for the distances that you would have to shift one of the waves in order for the total amplitude to be zero by doing the following:</p>
         <p>Set \( f(x,t) = 2.5\sin(1.5(x+d)) \) and add a slider for d</p>
-        <p>set d to the actual value you predicted</p>
+        <p>Set d to the actual value you predicted by typing in your value for d (instead of using the slider)</p>
         <p>Leave \( g(x,t) \) as it was before.</p>
         <p>Was your prediction correct? If not, what value(s) work?</p>
         <p><b>Question 3:</b> Test your prediction for the distances that you would have to shift one of the waves in order for the total amplitude to be 5 by adjusting d.</p>
@@ -136,9 +137,9 @@
   <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
   <script>
-    var elt = document.getElementById('waves');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setExpressions([{
+    var waves = document.getElementById('waves');
+    var calc1 = Desmos.GraphingCalculator(waves,[{pointsOfInterest:false}]);
+    calc1.setExpressions([{
         id: 'graph1',
         latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
       },
@@ -162,21 +163,22 @@
   </script>
 
   <script>
-    var elt = document.getElementById('upright-pulses');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setExpressions([{
-        id: 'graph1',
-        latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      },
+    var upulse = document.getElementById('upright-pulses');
+    var calc2 = Desmos.GraphingCalculator(upulse);
+    calc2.setExpressions([
       {
-        id: 'graph2',
+        id: 'graph1',
         latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
       },
       {
-        id: 'graph3',
+        id: 'graph2',
         latex: 'g\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
       },
       {
+          id: 'graph3',
+          latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+      },
+      {
         id: 'slider1',
         latex: 't=-10',
         sliderBounds: {
@@ -188,19 +190,20 @@
   </script>
 
   <script>
-    var elt = document.getElementById('inverted-pulses');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setExpressions([{
-        id: 'graph1',
-        latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      },
+    var ipulse = document.getElementById('inverted-pulses');
+    var calc3 = Desmos.GraphingCalculator(ipulse);
+    calc3.setExpressions([
       {
-        id: 'graph2',
+        id: 'graph1',
         latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
       },
       {
-        id: 'graph3',
+        id: 'graph2',
         latex: 'g\\left(x\\right)=-2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
+      },
+      {
+          id: 'graph3',
+          latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
       },
       {
         id: 'slider1',
@@ -214,9 +217,9 @@
   </script>
 
   <script>
-    var elt = document.getElementById('standing-waves');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setExpressions([{
+    var swaves = document.getElementById('standing-waves');
+    var calc4 = Desmos.GraphingCalculator(swaves);
+    calc4.setExpressions([{
         id: 'graph1',
         latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
       },
