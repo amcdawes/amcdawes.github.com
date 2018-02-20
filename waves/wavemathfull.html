@@ -14,7 +14,7 @@
         <h1 class="display-3"><a href="#">Exploring the sine function description of waves</a></h1>
         <h3>Exercise 1:</h3>
         <ol>
-          <li>Check that \( f\left(x\right)=2.5\sin\left(0.75x-0.5t\right) \) is entered in the first row.</li>
+          <li>Check that \( f\left(x\right)=2.5\sin\left(0.76x-0.5t\right) \) is entered in the first row.</li>
           <li>Check that \( g\left(x\right)=0 \) in the second row.</li>
           <li>Hide all but the \( f(x) \) function by clicking the colored icon to the left of the other functions.</li>
           <li>In the equation for \( f(x) \) above, what are the numerical values of k, &lambda;, &omega;, f, and Amplitude?</li>
@@ -39,8 +39,8 @@
         <h3>Exercise 2:</h3>
         <ol>
           <li>Stop the animation and set t=0 with the slider</li>
-          <li>Set \( f(x) = 2.5\sin(0.75x-0.5t+1) \)</li>
-          <li>Set \( g(x) = 2.5\sin(0.75x-0.5t) \)</li>
+          <li>Set \( f(x) = 2.5\sin(0.76x-0.5t+1) \)</li>
+          <li>Set \( g(x) = 2.5\sin(0.76x-0.5t) \)</li>
           <li>How do the graphs of \( f(x) \) and \( g(x) \) compare?</li>
           <li>Describe the behavior as you change the 1 to 2, 3, 4.</li>
           <li>Can you find a value other than 0 that makes \( f(x) \) line up with \( g(x,t) \)? Hint: Think of the easier function sin(x). How much do you need to change x by for sin(x) to repeat?</li>
@@ -52,8 +52,8 @@
       <div class="span5">
         <h3>Exercise 3:</h3>
         <ol>
-          <li>Set \( g(x)=2.5\sin(0.75x-0.5t) \)
-          <li>Set \( f(x)=2.5\sin(0.75(x+d)-0.5t) \), and click the button "add slider d" when it appears. This will add a slider to control the value of d. Start with \( d=1 \).</li>
+          <li>Set \( g(x)=2.5\sin(0.76x-0.5t) \)
+          <li>Set \( f(x)=2.5\sin(0.76(x+d)-0.5t) \), and click the button "add slider d" when it appears. This will add a slider to control the value of d. Start with \( d=1 \).</li>
           <li>Describe the behavior as you change d to 2, 3, 4.</li>
           <li>What d value(s) other than 0 make f(x,t) line up with g(x,t)? What do you notice special about them?</li>
         </ol>
@@ -66,7 +66,7 @@
     <div class="row">
       <div class="span5">
         <h2>Superposition and Interference</h2>
-        <h3>Exercise 1: Upright Pulses</h3>
+        <h3>Exercise 4: Upright Pulses</h3>
         <p>The diagram below shows two wave pulses traveling in opposite directions.</p>
         <img src="upright.png" width=250px>
         <p>Prediction: Sketch what you expect the total waveform to look like when the two waves are half-overlapping and when the two waves are completely overlapping.</p>
@@ -85,7 +85,7 @@
 
     <div class="row">
       <div class="span5">
-        <h3>Exercise 2: Inverted Pulses</h3>
+        <h3>Exercise 5: Inverted Pulses</h3>
         <p>The diagram below shows two wave pulses traveling in opposite directions.</p>
         <img src="invert.png" width=250px>
         <p>Prediction: Sketch what you expect the total waveform to look like when the two waves are half-overlapping and when the two waves are completely overlapping.</p>
@@ -104,7 +104,7 @@
 
     <div class="row">
       <div class="span5">
-        <h3>Exercise 3: Sine Combinations</h3>
+        <h3>Exercise 6: Sine Combinations</h3>
         <p>Consider two particular sinusoidal waves that can be expressed mathematically as:<p>
         <p>\( f(x,t) = 2.5\sin(1.5x+3t) \) and \( g(x,t) = 2.5\sin(1.5x+3t) \)</p>
         <p>Do NOT enter these into the simulation yet! First answer these predictions: Prediction 1: Suppose these two waves overlap at time t = 0. What do you expect to be the total amplitude of the resultant wave at this moment in time?</p>
@@ -141,7 +141,7 @@
     var calc1 = Desmos.GraphingCalculator(waves,[{pointsOfInterest:false}]);
     calc1.setExpressions([{
         id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
+        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
       },
       {
         id: 'graph2',
@@ -221,7 +221,7 @@
     var calc4 = Desmos.GraphingCalculator(swaves);
     calc4.setExpressions([{
         id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.75x-0.5t\\right)'
+        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
       },
       {
         id: 'graph2',
