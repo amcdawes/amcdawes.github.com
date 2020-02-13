@@ -59,112 +59,293 @@
   <!-- <iframe src="https://www.desmos.com/calculator/ec6tdhz0wm?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe> -->
 
 
-  <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  <script src="https://www.desmos.com/api/v1.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 
   <script>
+    var state1 = {
+      "version": 7,
+      // "graph": {
+      //   "viewport": {
+      //     "xmin": -10,
+      //     "ymin": -6.648936170212766,
+      //     "xmax": 10,
+      //     "ymax": 6.648936170212766
+      //   }
+      // },
+      "randomSeed": "36c1317cc98a68b1baebfef15865ceb8",
+      "expressions": {
+        "list": [
+          {
+            "type": "expression",
+            "id": "graph1",
+            "color": "#2d70b3",
+            "latex": "f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph2",
+            "color": "#388c46",
+            "latex": "g\\left(x\\right)=0"
+          },
+          {
+            "type": "expression",
+            "id": "slider1",
+            "color": "#6042a6",
+            "latex": "t=0",
+            "slider": {
+              "hardMin": true,
+              "hardMax": true,
+              "min": "0",
+              "newLoopMode": "LOOP_FORWARD"            }
+          }
+        ]
+      }
+    }
     var waves = document.getElementById('waves');
     var calc1 = Desmos.GraphingCalculator(waves,[{pointsOfInterest:false}]);
-    calc1.setExpressions([{
-        id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
-      },
-      {
-        id: 'graph2',
-        latex: 'g\\left(x\\right)=0'
-      },
-      // {
-      //   id: 'graph3',
-      //   latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      // },
-      {
-        id: 'slider1',
-        latex: 't=0',
-        sliderBounds: {
-          min: 0,
-          max: 10
-        }
-      }
-    ]);
+    //var state1 = require('./state1.json'); //load state file
+    calc1.setState(state1)
+    // calc1.setExpressions([{
+    //     id: 'graph1',
+    //     latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
+    //   },
+    //   {
+    //     id: 'graph2',
+    //     latex: 'g\\left(x\\right)=0'
+    //   },
+    //   // {
+    //   //   id: 'graph3',
+    //   //   latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+    //   // },
+    //   {
+    //     id: 'slider1',
+    //     latex: 't=0',
+    //     loopMode: "PLAY_ONCE",
+    //     sliderBounds: {
+    //       min: 0,
+    //       max: 10
+    //     }
+    //   }
+    // ]);
   </script>
 
   <script>
     var upulse = document.getElementById('upright-pulses');
     var calc2 = Desmos.GraphingCalculator(upulse);
-    calc2.setExpressions([
-      {
-        id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
-      },
-      {
-        id: 'graph2',
-        latex: 'g\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
-      },
-      {
-          id: 'graph3',
-          latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      },
-      {
-        id: 'slider1',
-        latex: 't=-10',
-        sliderBounds: {
-          min: -10,
-          max: 10
-        }
+    var state2 = {
+      "version": 7,
+      // "graph": {
+      //   "viewport": {
+      //     "xmin": -10,
+      //     "ymin": -6.648936170212766,
+      //     "xmax": 10,
+      //     "ymax": 6.648936170212766
+      //   }
+      // },
+      "randomSeed": "48e05b203c94096f7442e4e6e858aaa2",
+      "expressions": {
+        "list": [
+          {
+            "type": "expression",
+            "id": "graph1",
+            "color": "#2d70b3",
+            "latex": "f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph2",
+            "color": "#388c46",
+            "latex": "g\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph3",
+            "color": "#6042a6",
+            "latex": "y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "slider1",
+            "color": "#000000",
+            "latex": "t=-10",
+            "slider": {
+              "hardMin": true,
+              "hardMax": true,
+              "loopMode": "LOOP_FORWARD"
+            }
+          }
+        ]
       }
-    ]);
+    }
+    calc2.setState(state2)
+    // calc2.setExpressions([
+    //   {
+    //     id: 'graph1',
+    //     latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
+    //   },
+    //   {
+    //     id: 'graph2',
+    //     latex: 'g\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
+    //   },
+    //   {
+    //       id: 'graph3',
+    //       latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+    //   },
+    //   {
+    //     id: 'slider1',
+    //     latex: 't=-10',
+    //     sliderBounds: {
+    //       min: -10,
+    //       max: 10
+    //     }
+    //   }
+    // ]);
   </script>
 
   <script>
     var ipulse = document.getElementById('inverted-pulses');
     var calc3 = Desmos.GraphingCalculator(ipulse);
-    calc3.setExpressions([
-      {
-        id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
-      },
-      {
-        id: 'graph2',
-        latex: 'g\\left(x\\right)=-2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
-      },
-      {
-          id: 'graph3',
-          latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      },
-      {
-        id: 'slider1',
-        latex: 't=-10',
-        sliderBounds: {
-          min: -10,
-          max: 10
-        }
+    var state3 = {
+      "version": 7,
+      // "graph": {
+      //   "viewport": {
+      //     "xmin": -10,
+      //     "ymin": -6.648936170212766,
+      //     "xmax": 10,
+      //     "ymax": 6.648936170212766
+      //   }
+      // },
+      "randomSeed": "5d4608a0848b2552e73de4b9b59b0e95",
+      "expressions": {
+        "list": [
+          {
+            "type": "expression",
+            "id": "graph1",
+            "color": "#2d70b3",
+            "latex": "f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph2",
+            "color": "#388c46",
+            "latex": "g\\left(x\\right)=-2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph3",
+            "color": "#6042a6",
+            "latex": "y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "slider1",
+            "color": "#000000",
+            "latex": "t=-10",
+            "slider": {
+              "hardMin": true,
+              "hardMax": true,
+              "loopMode": "LOOP_FORWARD"
+            }
+          }
+        ]
       }
-    ]);
+    }
+    calc3.setState(state3)
+    // calc3.setExpressions([
+    //   {
+    //     id: 'graph1',
+    //     latex: 'f\\left(x\\right)=2.5\\cdot\\exp\\left(-\\left(x-t\\right)^2\\right)'
+    //   },
+    //   {
+    //     id: 'graph2',
+    //     latex: 'g\\left(x\\right)=-2.5\\cdot\\exp\\left(-\\left(x+t\\right)^2\\right)'
+    //   },
+    //   {
+    //       id: 'graph3',
+    //       latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+    //   },
+    //   {
+    //     id: 'slider1',
+    //     latex: 't=-10',
+    //     sliderBounds: {
+    //       min: -10,
+    //       max: 10
+    //     }
+    //   }
+    // ]);
   </script>
 
   <script>
     var swaves = document.getElementById('standing-waves');
     var calc4 = Desmos.GraphingCalculator(swaves);
-    calc4.setExpressions([{
-        id: 'graph1',
-        latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
-      },
-      {
-        id: 'graph2',
-        latex: 'g\\left(x\\right)=0'
-      },
-      {
-        id: 'graph3',
-        latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
-      },
-      {
-        id: 'slider1',
-        latex: 't=0',
-        sliderBounds: {
-          min: 0,
-          max: 10
-        }
+    var state4 = {
+      "version": 7,
+      // "graph": {
+      //   "viewport": {
+      //     "xmin": -10,
+      //     "ymin": -6.648936170212766,
+      //     "xmax": 10,
+      //     "ymax": 6.648936170212766
+      //   }
+      // },
+      "randomSeed": "10c0e4943c5c62c1875ed7583c299545",
+      "expressions": {
+        "list": [
+          {
+            "type": "expression",
+            "id": "graph1",
+            "color": "#2d70b3",
+            "latex": "f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "graph2",
+            "color": "#388c46",
+            "latex": "g\\left(x\\right)=0"
+          },
+          {
+            "type": "expression",
+            "id": "graph3",
+            "color": "#6042a6",
+            "latex": "y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)"
+          },
+          {
+            "type": "expression",
+            "id": "slider1",
+            "color": "#000000",
+            "latex": "t=0",
+            "slider": {
+              "hardMin": true,
+              "hardMax": true,
+              "loopMode": "LOOP_FORWARD",
+              "min": "0"
+            }
+          }
+        ]
       }
-    ]);
+    }
+    calc4.setState(state4)
+    // calc4.setExpressions([{
+    //     id: 'graph1',
+    //     latex: 'f\\left(x\\right)=2.5\\cdot\\sin\\left(0.76x-0.5t\\right)'
+    //   },
+    //   {
+    //     id: 'graph2',
+    //     latex: 'g\\left(x\\right)=0'
+    //   },
+    //   {
+    //     id: 'graph3',
+    //     latex: 'y\\left(x\\right)=f\\left(x\\right)+g\\left(x\\right)'
+    //   },
+    //   {
+    //     id: 'slider1',
+    //     latex: 't=0',
+    //     sliderBounds: {
+    //       min: 0,
+    //       max: 10
+    //     }
+    //   }
+    // ]);
   </script>
 
   <script>
