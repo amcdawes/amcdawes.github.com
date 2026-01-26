@@ -1,8 +1,34 @@
-
+# Jekyll
 _site/*
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
+# Bundler
+vendor/bundle/
+.bundle/
+Gemfile.lock
+
+# Project-specific
 tinkering/app.js
-
 tinkering/index.html
 
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Ruby
+*.gem
+*.rbc
+
+# Editor temp files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
