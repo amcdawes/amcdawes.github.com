@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}Andrew M.C. Dawes</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d6efd',
+                        secondary: '#6c757d',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4d39458cff.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom Styles -->
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn-primary {
+                @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors;
+            }
+            .btn-secondary {
+                @apply bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded transition-colors;
+            }
+        }
+    </style>
+</head>
+<body class="pt-20">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand -->
+                <a href="/index.html" class="text-xl font-bold text-gray-800 hover:text-gray-600">
+                    Andrew M.C. Dawes
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-6">
+                    {% assign current = page.url | downcase | split: '/' %}
+                    <a href="/index.html" class="{% if current[1] == 'index.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Home</a>
+                    <a href="/bio.html" class="{% if current[1] == 'bio.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Bio</a>
+                    <a href="/contact.html" class="{% if current[1] == 'contact.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Contact</a>
+                    <a href="/papers.html" class="{% if current[1] == 'papers.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Papers</a>
+                    <a href="/projects.html" class="{% if current[1] == 'projects.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Projects</a>
+                    <a href="/schedule.html" class="{% if current[1] == 'schedule.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Schedule</a>
+                    <a href="/making/index.html" class="{% if current[1] == 'making.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Making</a>
+                    <a href="/useful.html" class="{% if current[1] == 'useful.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %}">Useful Stuff</a>
+                    <a href="http://dawes.wordpress.com" class="text-gray-700 hover:text-blue-600">Blog <i class="fa fa-external-link text-xs"></i></a>
+                    <a href="http://github.com/daweslab" class="text-gray-700 hover:text-blue-600">Code <i class="fa fa-external-link text-xs"></i></a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="/index.html" class="{% if current[1] == 'index.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Home</a>
+                    <a href="/bio.html" class="{% if current[1] == 'bio.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Bio</a>
+                    <a href="/contact.html" class="{% if current[1] == 'contact.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Contact</a>
+                    <a href="/papers.html" class="{% if current[1] == 'papers.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Papers</a>
+                    <a href="/projects.html" class="{% if current[1] == 'projects.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Projects</a>
+                    <a href="/schedule.html" class="{% if current[1] == 'schedule.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Schedule</a>
+                    <a href="/making/index.html" class="{% if current[1] == 'making.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Making</a>
+                    <a href="/useful.html" class="{% if current[1] == 'useful.html' %}text-blue-600 font-semibold{% else %}text-gray-700 hover:text-blue-600{% endif %} py-2">Useful Stuff</a>
+                    <a href="http://dawes.wordpress.com" class="text-gray-700 hover:text-blue-600 py-2">Blog <i class="fa fa-external-link text-xs"></i></a>
+                    <a href="http://github.com/daweslab" class="text-gray-700 hover:text-blue-600 py-2">Code <i class="fa fa-external-link text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        {{ content }}
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mt-16 py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-gray-600 text-sm">
+                <p class="mb-4">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" class="inline-block" />
+                    </a>
+                </p>
+                <p class="mb-2">
+                    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">amcdawes.com</span> by 
+                    <a xmlns:cc="http://creativecommons.org/ns#" href="amcdawes.com" property="cc:attributionName" rel="cc:attributionURL" class="text-blue-600 hover:underline">Andrew Dawes</a> 
+                    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="text-blue-600 hover:underline">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+                <p>
+                    Built with <a href="https://tailwindcss.com" class="text-blue-600 hover:underline">Tailwind CSS</a> and <a href="https://jekyllrb.com" class="text-blue-600 hover:underline">Jekyll</a>. 
+                    Hosted by <a href="http://www.github.com" class="text-blue-600 hover:underline">GitHub</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+        var _gaq=[['_setAccount','UA-831794-5'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>

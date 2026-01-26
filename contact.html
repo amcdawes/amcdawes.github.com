@@ -1,62 +1,106 @@
 ---
+layout: default
 title: Contact
-categories: main
-group: "navigation"
 ---
-{% include header.html %}
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="row">
-    <div class="col-md-4">
-      <h2>Contact information</h2>
-    </div>
-    <div class="col-md-4">
-      <address>
-          <strong>dawes@pacificu.edu</strong><br>
-        <a href="public.key">Public Key</a><br>
-        Phone: (503) 352-3171<br>
-        Fax: (503) 352-2933<br>
-        Office: Price 107<br>
-        Lab : Price 124<br>
+<div class="max-w-5xl mx-auto">
+  <!-- Contact Header -->
+  <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl shadow-lg p-8 mb-8">
+    <h1 class="text-4xl font-bold mb-2">Contact Information</h1>
+    <p class="text-blue-100 text-lg">Get in touch via email or find me on campus</p>
+  </div>
+
+  <!-- Contact Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <!-- Email & Phone -->
+    <div class="bg-white rounded-xl shadow-md p-8">
+      <div class="flex items-center mb-4">
+        <i class="fa fa-envelope text-blue-600 text-3xl mr-3"></i>
+        <h2 class="text-2xl font-bold text-gray-900">Contact Details</h2>
+      </div>
+      <address class="not-italic space-y-3 text-gray-700">
+        <div class="flex items-center">
+          <i class="fa fa-envelope text-gray-400 w-6 mr-3"></i>
+          <a href="mailto:dawes@pacificu.edu" class="text-blue-600 hover:underline font-semibold">dawes@pacificu.edu</a>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-key text-gray-400 w-6 mr-3"></i>
+          <a href="public.key" class="text-blue-600 hover:underline">Public Key</a>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-phone text-gray-400 w-6 mr-3"></i>
+          <span>(503) 352-3171</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-fax text-gray-400 w-6 mr-3"></i>
+          <span>(503) 352-2933</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-door-open text-gray-400 w-6 mr-3"></i>
+          <span>Office: Price 107</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-flask text-gray-400 w-6 mr-3"></i>
+          <span>Lab: Price 124</span>
+        </div>
       </address>
     </div>
-    <div class="col-md-4">
-      <address>
-        <strong>Andrew M.C. Dawes</strong><br>
+
+    <!-- Mailing Address -->
+    <div class="bg-white rounded-xl shadow-md p-8">
+      <div class="flex items-center mb-4">
+        <i class="fa fa-map-marker-alt text-blue-600 text-3xl mr-3"></i>
+        <h2 class="text-2xl font-bold text-gray-900">Mailing Address</h2>
+      </div>
+      <address class="not-italic text-gray-700 leading-relaxed">
+        <strong class="text-gray-900">Andrew M.C. Dawes</strong><br>
         Physics Department UC#A121<br>
         Pacific University<br>
         2043 College Way<br>
-        Forest Grove OR<br>
-        97116-1797<br>
+        Forest Grove, OR 97116-1797
       </address>
     </div>
   </div>
-</div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Projects</h2>
-           <p>My current projects run the gamut of optics, electronics, and computing. My research projects explore the interactions between light (i.e. lasers) and matter (e.g. individual atoms). My research group operates three laser systems, an atom trap, and a variety of experimental instruments. I make things and fix things. 3D printing and robotics are recent hobbies as well.</p>
-          <p><a class="btn" href="projects.html">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Bio</h2>
-           <p>I came to Pacific University in the Fall of 2008 after graduating from Duke University in May 2008 with my Ph.D. in Physics. My six years at Duke followed four years at Whitman College (Walla Walla, WA) where I graduated in 2002 with a B.A. in Physics.</p>
-          <p><a class="btn" href="bio.html">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2><a href="https://www.dropbox.com/s/kp0a9m9ev4rx3np/dawes-cv.pdf?dl=0">Current CV</a></h2>
-
-	  <h3>Recent Papers:</h3>
-      <ol class="pubs">
-          <li>Andrew M.C. Dawes, `<a href="https://arxiv.org/abs/1909.13651">Undergraduate Quantum Mechanics: a Numerical Approach using QuTiP</a>,' arXiv:1909.13651 [physics.ed-ph] (2019)</li>
-          <li>Heejeong Jeong, Chang-Won Lee, Andrew M.C. Dawes, and Daniel J. Gauthier, `<a href="https://www.osapublishing.org/josab/abstract.cfm?uri=josab-36-12-3282">Optical precursors in a weakly dispersive double narrow-resonance dielectric</a>,' <em>JOSA B</em> <b>36</b> 3282 (2019).</li>
-          <li>Brandon S. Harms, Blake E. Anthony, Noah T. Holte, Hunter A. Dassonville, and Andrew M.C. Dawes, `<a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.053818">Multimode Quantum State Tomography Using Unbalanced Array Detection</a>,' <em>Phys. Rev. A</em> <b>90</b>, 053818 (2014).</li>
-      </ol>
-
-          <p><a class="btn" href="papers.html">View more &raquo;</a></p>
-        </div>
+  <!-- Quick Links -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <a href="projects.html" class="group bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+      <div class="flex items-center mb-3">
+        <i class="fa fa-flask text-blue-600 text-2xl mr-3 group-hover:scale-110 transition-transform"></i>
+        <h3 class="text-xl font-bold text-gray-900">Projects</h3>
       </div>
-{% include footer.html %}
+      <p class="text-gray-600 text-sm mb-3">
+        Explore my research in optics, electronics, and computing. From laser systems to 3D printing.
+      </p>
+      <span class="text-blue-600 font-semibold inline-flex items-center">
+        View details <i class="fa fa-arrow-right ml-2"></i>
+      </span>
+    </a>
+
+    <a href="bio.html" class="group bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+      <div class="flex items-center mb-3">
+        <i class="fa fa-user text-blue-600 text-2xl mr-3 group-hover:scale-110 transition-transform"></i>
+        <h3 class="text-xl font-bold text-gray-900">Biography</h3>
+      </div>
+      <p class="text-gray-600 text-sm mb-3">
+        Learn about my academic background from Whitman College to Duke University and beyond.
+      </p>
+      <span class="text-blue-600 font-semibold inline-flex items-center">
+        View details <i class="fa fa-arrow-right ml-2"></i>
+      </span>
+    </a>
+
+    <a href="papers.html" class="group bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+      <div class="flex items-center mb-3">
+        <i class="fa fa-file-alt text-blue-600 text-2xl mr-3 group-hover:scale-110 transition-transform"></i>
+        <h3 class="text-xl font-bold text-gray-900">Publications</h3>
+      </div>
+      <p class="text-gray-600 text-sm mb-3">
+        Browse my published papers and presentations on quantum optics, photonics, and more.
+      </p>
+      <span class="text-blue-600 font-semibold inline-flex items-center">
+        View all papers <i class="fa fa-arrow-right ml-2"></i>
+      </span>
+    </a>
+  </div>
+</div>
