@@ -7,7 +7,7 @@ _site/*
 # Bundler
 vendor/bundle/
 .bundle/
-Gemfile.lock
+# Note: Gemfile.lock is committed so Dependabot can update it
 
 # Project-specific
 tinkering/app.js
