@@ -1,8 +1,39 @@
-
+# Jekyll
 _site/*
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
+# Bundler
+vendor/bundle/
+.bundle/
+# Note: Gemfile.lock is committed so Dependabot can update it
+
+# Project-specific
 tinkering/app.js
-
 tinkering/index.html
 
+# Large/uncropped images (use optimized versions instead)
+img/*_uncrop*.jpg
+img/*_uncrop*.png
+img/headshot_2025.jpg
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Ruby
+*.gem
+*.rbc
+
+# Editor temp files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log

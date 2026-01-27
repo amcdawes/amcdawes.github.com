@@ -1,0 +1,114 @@
+---
+layout: default
+title: Tailwind Test
+---
+
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Tailwind CSS is Working! 🎉</h1>
+    
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+        <p class="text-lg text-blue-900">
+            This page is using the new Tailwind CSS layout. Notice the responsive navigation, custom styling, and utility classes.
+        </p>
+    </div>
+
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Component Examples</h2>
+    
+    <!-- Buttons -->
+    <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Buttons</h3>
+        <div class="flex gap-4 flex-wrap">
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-secondary">Secondary Button</button>
+            <a href="#" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition-colors">Custom Button</a>
+        </div>
+    </div>
+
+    <!-- Grid Example -->
+    <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Responsive Grid</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <h4 class="font-bold text-lg mb-2">Card 1</h4>
+                <p class="text-gray-600">This is a responsive card component using Tailwind utilities.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <h4 class="font-bold text-lg mb-2">Card 2</h4>
+                <p class="text-gray-600">Resize your browser to see the responsive behavior.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <h4 class="font-bold text-lg mb-2">Card 3</h4>
+                <p class="text-gray-600">Three columns on desktop, one on mobile.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Thumbnails -->
+    <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Image Cards</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="#" class="group">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="/img/laser_head.png" alt="Photonics" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-center font-semibold text-gray-700 group-hover:text-blue-600">Photonics</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="/img/writing.jpg" alt="Publications" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-center font-semibold text-gray-700 group-hover:text-blue-600">Publications</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="/img/prusamk3s.jpg" alt="3D Printing" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-center font-semibold text-gray-700 group-hover:text-blue-600">3D Printing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Typography</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            This is a lead paragraph with larger text. I am a Professor of Physics at Pacific University in Forest Grove Oregon.
+        </p>
+        <p class="text-gray-600 mb-4">
+            Regular paragraph text. I believe active learning environments are fundamental to effective science education.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>Bullet point one</li>
+            <li>Bullet point two</li>
+            <li>Bullet point three</li>
+        </ul>
+    </div>
+
+    <!-- Alert Box -->
+    <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-8">
+        <div class="flex items-start">
+            <i class="fa fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+            <div>
+                <h4 class="font-semibold text-green-900 mb-1">Phase 1 Complete!</h4>
+                <p class="text-green-800">Tailwind CSS is now integrated and ready to use. The navigation is responsive, try resizing your browser or opening on mobile.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Next Steps</h3>
+        <ol class="list-decimal list-inside text-gray-600 space-y-2">
+            <li>Test this page on mobile devices</li>
+            <li>Convert home page (index.html) to use this layout</li>
+            <li>Create reusable component includes</li>
+            <li>Migrate remaining pages</li>
+            <li>Remove Bootstrap dependencies</li>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+# Minimal config for local development
+# The github-pages gem loads jekyll-github-metadata automatically,
+# but we can't use it locally due to SSL issues.
+# GitHub Pages will still build correctly in production.
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
