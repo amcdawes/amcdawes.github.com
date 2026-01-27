@@ -26,7 +26,7 @@
     <ol class="space-y-4 text-gray-700 leading-relaxed">
     {% for p in site.data.publications.presentations %}
       <li id="{{ p.id }}" class="text-sm">
-        {{ p.citation_html | markdownify }}
+        {% if p.invited %}&dagger; {% endif %}{{ p.citation_html | markdownify }}
       </li>
     {% endfor %}
     </ol>
