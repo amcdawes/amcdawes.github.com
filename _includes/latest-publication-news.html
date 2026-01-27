@@ -1,0 +1,22 @@
+<!-- 
+  Auto-generate a news item from the most recent publication
+  Usage: {% include latest-publication-news.html %}
+-->
+
+{% assign latest_paper = site.data.publications.papers | first %}
+{% if latest_paper %}
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+  <div class="flex items-start">
+    <i class="fa fa-file-alt text-blue-600 text-xl mr-3 mt-1"></i>
+    <div>
+      <h4 class="font-semibold text-blue-900 mb-1">Latest Publication</h4>
+      <div class="text-blue-800 text-sm leading-relaxed">
+        {{ latest_paper.citation_html | markdownify }}
+      </div>
+      <a href="/papers.html" class="text-blue-600 hover:text-blue-700 text-sm font-semibold inline-flex items-center mt-2">
+        See all publications <i class="fa fa-arrow-right ml-1 text-xs"></i>
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}

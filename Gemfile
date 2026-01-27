@@ -12,10 +12,14 @@ source "https://rubygems.org"
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# Only use github-pages in production (GitHub's servers), not locally
+gem "github-pages", group: :jekyll_plugins, install_if: -> { ENV['JEKYLL_ENV'] == 'production' }
+# For local development, use plain Jekyll
+gem "jekyll", "~> 3.9.3", install_if: -> { ENV['JEKYLL_ENV'] != 'production' }
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "kramdown-parser-gfm"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

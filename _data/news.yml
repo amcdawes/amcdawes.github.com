@@ -1,0 +1,26 @@
+# News items for the homepage
+# - Manual news items: Add custom entries here
+# - Auto-generated: The site can also show your latest publication automatically
+# 
+# Fields:
+#   title: Headline for the news item
+#   date: YYYY-MM-DD format
+#   summary: Brief description (HTML allowed)
+#   link: URL to more information (optional)
+#   type: 'custom' or 'publication' (optional, for styling)
+#   featured: true/false (show on homepage, default: true)
+
+- title: "New Publications on Advanced Lithography"
+  date: 2025-01-15
+  summary: "Recent work on displacement Talbot lithography and EUV multilayer defect inspection published in <em>SPIE Proceedings</em>."
+  link: "/papers.html"
+  type: "publication"
+  featured: true
+
+# Add more news items below as needed
+# Example:
+# - title: "Your Custom News Item"
+#   date: 2026-01-25
+#   summary: "Description of what happened..."
+#   link: "https://example.com"
+#   featured: true
